@@ -75,9 +75,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		FA82A126294F2C2800410378 /* AdditionalAccentColors */ = {
+		FA82A126294F2C2800410378 /* PrefPane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA82A136294F2C2800410378 /* Build configuration list for PBXNativeTarget "AdditionalAccentColors" */;
+			buildConfigurationList = FA82A136294F2C2800410378 /* Build configuration list for PBXNativeTarget "PrefPane" */;
 			buildPhases = (
 				FA82A122294F2C2800410378 /* Headers */,
 				FA82A123294F2C2800410378 /* Sources */,
@@ -88,7 +88,7 @@
 			);
 			dependencies = (
 			);
-			name = AdditionalAccentColors;
+			name = PrefPane;
 			productName = AdditionalAccentColors;
 			productReference = FA82A127294F2C2800410378 /* AdditionalAccentColors.prefPane */;
 			productType = "com.apple.product-type.bundle";
@@ -100,6 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					FA82A126294F2C2800410378 = {
@@ -120,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA82A126294F2C2800410378 /* AdditionalAccentColors */,
+				FA82A126294F2C2800410378 /* PrefPane */,
 			);
 		};
 /* End PBXProject section */
@@ -282,8 +283,8 @@
 				INFOPLIST_KEY_NSPrincipalClass = AdditionalAccentColors;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.slippyd.AdditionalAccentColors;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slippyd.$(PROJECT_NAME)-$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = prefPane;
 			};
@@ -302,8 +303,8 @@
 				INFOPLIST_KEY_NSPrincipalClass = AdditionalAccentColors;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.slippyd.AdditionalAccentColors;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slippyd.$(PROJECT_NAME)-$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = prefPane;
 			};
@@ -321,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA82A136294F2C2800410378 /* Build configuration list for PBXNativeTarget "AdditionalAccentColors" */ = {
+		FA82A136294F2C2800410378 /* Build configuration list for PBXNativeTarget "PrefPane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA82A137294F2C2800410378 /* Debug */,
