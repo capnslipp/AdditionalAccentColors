@@ -11,6 +11,9 @@
 		FA82A12D294F2C2800410378 /* AdditionalAccentColors.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* AdditionalAccentColors.m */; };
 		FA82A12F294F2C2800410378 /* AdditionalAccentColors.tiff in Resources */ = {isa = PBXBuildFile; fileRef = FA82A12E294F2C2800410378 /* AdditionalAccentColors.tiff */; };
 		FA82A132294F2C2800410378 /* AdditionalAccentColors.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A130294F2C2800410378 /* AdditionalAccentColors.xib */; };
+		FA82A153294F2E9800410378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A152294F2E9800410378 /* AppDelegate.swift */; };
+		FA82A155294F2E9900410378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA82A154294F2E9900410378 /* Assets.xcassets */; };
+		FA82A158294F2E9900410378 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A156294F2E9900410378 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,22 @@
 		FA82A12E294F2C2800410378 /* AdditionalAccentColors.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AdditionalAccentColors.tiff; sourceTree = "<group>"; };
 		FA82A131294F2C2800410378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AdditionalAccentColors.xib; sourceTree = "<group>"; };
 		FA82A133294F2C2800410378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA82A150294F2E9800410378 /* AdditionalAccentColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdditionalAccentColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA82A152294F2E9800410378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA82A154294F2E9900410378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA82A157294F2E9900410378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA82A159294F2E9900410378 /* StandaloneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StandaloneApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FA82A124294F2C2800410378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA82A14D294F2E9800410378 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				FA82A129294F2C2800410378 /* AdditionalAccentColors */,
+				FA82A151294F2E9800410378 /* StandaloneApp */,
 				FA82A128294F2C2800410378 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				FA82A127294F2C2800410378 /* AdditionalAccentColors.prefPane */,
+				FA82A150294F2E9800410378 /* AdditionalAccentColors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +76,17 @@
 				FA82A133294F2C2800410378 /* Info.plist */,
 			);
 			path = AdditionalAccentColors;
+			sourceTree = "<group>";
+		};
+		FA82A151294F2E9800410378 /* StandaloneApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA82A152294F2E9800410378 /* AppDelegate.swift */,
+				FA82A154294F2E9900410378 /* Assets.xcassets */,
+				FA82A156294F2E9900410378 /* MainMenu.xib */,
+				FA82A159294F2E9900410378 /* StandaloneApp.entitlements */,
+			);
+			path = StandaloneApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +121,23 @@
 			productReference = FA82A127294F2C2800410378 /* AdditionalAccentColors.prefPane */;
 			productType = "com.apple.product-type.bundle";
 		};
+		FA82A14F294F2E9800410378 /* StandaloneApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA82A15A294F2E9900410378 /* Build configuration list for PBXNativeTarget "StandaloneApp" */;
+			buildPhases = (
+				FA82A14C294F2E9800410378 /* Sources */,
+				FA82A14D294F2E9800410378 /* Frameworks */,
+				FA82A14E294F2E9800410378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StandaloneApp;
+			productName = StandaloneApp;
+			productReference = FA82A150294F2E9800410378 /* AdditionalAccentColors.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +149,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					FA82A126294F2C2800410378 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FA82A14F294F2E9800410378 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -122,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				FA82A126294F2C2800410378 /* PrefPane */,
+				FA82A14F294F2E9800410378 /* StandaloneApp */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +185,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA82A14E294F2E9800410378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA82A155294F2E9900410378 /* Assets.xcassets in Resources */,
+				FA82A158294F2E9900410378 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,6 +202,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA82A12D294F2C2800410378 /* AdditionalAccentColors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA82A14C294F2E9800410378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA82A153294F2E9800410378 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +222,14 @@
 				FA82A131294F2C2800410378 /* Base */,
 			);
 			name = AdditionalAccentColors.xib;
+			sourceTree = "<group>";
+		};
+		FA82A156294F2E9900410378 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA82A157294F2E9900410378 /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -310,6 +384,60 @@
 			};
 			name = Release;
 		};
+		FA82A15B294F2E9900410378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StandaloneApp/StandaloneApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slippyd.$(PROJECT_NAME)-$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA82A15C294F2E9900410378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StandaloneApp/StandaloneApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.slippyd.$(PROJECT_NAME)-$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +455,15 @@
 			buildConfigurations = (
 				FA82A137294F2C2800410378 /* Debug */,
 				FA82A138294F2C2800410378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA82A15A294F2E9900410378 /* Build configuration list for PBXNativeTarget "StandaloneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA82A15B294F2E9900410378 /* Debug */,
+				FA82A15C294F2E9900410378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
