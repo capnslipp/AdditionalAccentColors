@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrefPane-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA82A127294F2C2800410378 /* AdditionalAccentColors.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdditionalAccentColors.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA82A12C294F2C2800410378 /* AdditionalAccentColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalAccentColors.swift; sourceTree = "<group>"; };
 		FA82A12E294F2C2800410378 /* AdditionalAccentColors.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AdditionalAccentColors.tiff; sourceTree = "<group>"; };
@@ -67,10 +68,11 @@
 		FA82A129294F2C2800410378 /* AdditionalAccentColors */ = {
 			isa = PBXGroup;
 			children = (
-				FA82A12C294F2C2800410378 /* AdditionalAccentColors.swift */,
 				FA82A12E294F2C2800410378 /* AdditionalAccentColors.tiff */,
 				FA82A130294F2C2800410378 /* AdditionalAccentColors.xib */,
 				FA82A133294F2C2800410378 /* Info.plist */,
+				FA82A12C294F2C2800410378 /* AdditionalAccentColors.swift */,
+				FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */,
 			);
 			path = AdditionalAccentColors;
 			sourceTree = "<group>";
@@ -103,9 +105,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA82A136294F2C2800410378 /* Build configuration list for PBXNativeTarget "PrefPane" */;
 			buildPhases = (
-				FA82A122294F2C2800410378 /* Headers */,
 				FA82A123294F2C2800410378 /* Sources */,
 				FA82A124294F2C2800410378 /* Frameworks */,
+				FA82A122294F2C2800410378 /* Headers */,
 				FA82A125294F2C2800410378 /* Resources */,
 			);
 			buildRules = (
@@ -146,6 +148,7 @@
 				TargetAttributes = {
 					FA82A126294F2C2800410378 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					FA82A14F294F2E9800410378 = {
 						CreatedOnToolsVersion = 14.2;
@@ -176,8 +179,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA82A132294F2C2800410378 /* AdditionalAccentColors.xib in Resources */,
 				FA82A12F294F2C2800410378 /* AdditionalAccentColors.tiff in Resources */,
+				FA82A132294F2C2800410378 /* AdditionalAccentColors.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +266,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -281,11 +285,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -322,6 +327,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -334,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -345,19 +351,36 @@
 		FA82A137294F2C2800410378 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdditionalAccentColors/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = AdditionalAccentColors;
 				INFOPLIST_KEY_NSPrincipalClass = AdditionalAccentColors;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.slippyd.$(PROJECT_NAME)-$(TARGET_NAME)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AdditionalAccentColors/PrefPane-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Debug;
@@ -365,19 +388,35 @@
 		FA82A138294F2C2800410378 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AdditionalAccentColors/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = AdditionalAccentColors;
 				INFOPLIST_KEY_NSPrincipalClass = AdditionalAccentColors;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.slippyd.$(PROJECT_NAME)-$(TARGET_NAME)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AdditionalAccentColors/PrefPane-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Release;

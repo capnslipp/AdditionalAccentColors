@@ -9,24 +9,24 @@ import PreferencePanes
 
 class AdditionalAccentColors : NSPreferencePane {
 
-	@IBOutlet weak var testTextField: NSTextField!
+	//@IBOutlet weak var testTextField: NSTextField!
 	
 	override func mainViewDidLoad()
 	{
-		self.testTextField.stringValue = "It worked!"
+		//self.testTextField.stringValue = "It worked!"
 		
-		let alert = NSAlert()
-		alert.messageText = "This is the message text"
-		alert.informativeText = "This is the informative text"
-		alert.addButton(withTitle: "OK")
-		alert.addButton(withTitle: "Cancel")
-
-		let response = alert.runModal()
-		if response == .alertFirstButtonReturn {
-			print("OK button clicked")
-		} else {
-			print("Cancel button clicked")
-		}
+		//let alert = NSAlert()
+		//alert.messageText = "This is the message text"
+		//alert.informativeText = "This is the informative text"
+		//alert.addButton(withTitle: "OK")
+		//alert.addButton(withTitle: "Cancel")
+//
+		//let response = alert.runModal()
+		//if response == .alertFirstButtonReturn {
+		//	print("OK button clicked")
+		//} else {
+		//	print("Cancel button clicked")
+		//}
 	}
 	
 }
