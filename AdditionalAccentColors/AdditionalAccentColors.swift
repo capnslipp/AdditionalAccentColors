@@ -9,11 +9,11 @@ import PreferencePanes
 
 class AdditionalAccentColors : NSPreferencePane {
 
-	//@IBOutlet weak var testTextField: NSTextField!
+	@IBOutlet weak var testTextField: NSTextField!
 	
 	override func mainViewDidLoad()
 	{
-		//self.testTextField.stringValue = "It worked!"
+		self.testTextField.stringValue = "It worked!"
 		
 		//let alert = NSAlert()
 		//alert.messageText = "This is the message text"
