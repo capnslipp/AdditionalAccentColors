@@ -5,24 +5,6 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "&#10;rm -rf ~/&quot;Library/PreferencePanes/${FULL_PRODUCT_NAME}&quot;&#10;&#10;echo &quot;${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}&quot;&#10;&#10;cp -r &quot;${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}&quot; ~/&quot;Library/PreferencePanes/${FULL_PRODUCT_NAME}&quot;&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "FA82A126294F2C2800410378"
-                     BuildableName = "AdditionalAccentColors.prefPane"
-                     BlueprintName = "PrefPane"
-                     ReferencedContainer = "container:AdditionalAccentColors.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
@@ -63,7 +45,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "open_syspref(){&#10;&#9;sleep 5&#10;&#9;osascript -e &apos;tell application &quot;System Preferences&quot; to activate&apos;&#10;&#9;osascript -e &apos;tell application &quot;System Preferences&quot; to set the current pane to pane id &quot;com.slippyd.AdditionalAccentColors-PrefPane&quot;&apos;&#10;}&#10;open_syspref &amp;&#10;">
+               scriptText = "# Remove previously installed prefPane&#10;rm -rf &quot;${INSTALL_PATH}/${FULL_PRODUCT_NAME}&quot;&#10;&#10;# Install built prefPane by copying product to user library.&#10;cp -r &quot;${DSTROOT}/${INSTALL_PATH}/${FULL_PRODUCT_NAME}&quot; &quot;${INSTALL_PATH}/${FULL_PRODUCT_NAME}&quot;&#10;&#10;&#10;open_syspref(){&#10;&#9;osascript -e &apos;tell application &quot;System Preferences&quot; to quit&apos;&#10;&#9;sleep 6&#10;&#9;osascript -e &apos;tell application &quot;System Preferences&quot; to activate&apos;&#10;&#9;sleep 3&#10;&#9;osascript -e &quot;tell application \&quot;System Preferences\&quot; to set the current pane to pane id \&quot;${PRODUCT_BUNDLE_IDENTIFIER}\&quot;&quot;&#10;}&#10;# Allow Xcode to start waiting for app launch.&#10;open_syspref &amp;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -76,8 +58,27 @@
             </ActionContent>
          </ExecutionAction>
       </PreActions>
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Cleanup by removing installed prefPane&#10;rm -rf ~/&quot;Library/PreferencePanes/${FULL_PRODUCT_NAME}&quot;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "FA82A126294F2C2800410378"
+                     BuildableName = "AdditionalAccentColors.prefPane"
+                     BlueprintName = "PrefPane"
+                     ReferencedContainer = "container:AdditionalAccentColors.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
       <PathRunnable
          runnableDebuggingMode = "0"
+         BundleIdentifier = "com.apple.systempreferences"
          FilePath = "/System/Applications/System Preferences.app">
       </PathRunnable>
    </LaunchAction>
