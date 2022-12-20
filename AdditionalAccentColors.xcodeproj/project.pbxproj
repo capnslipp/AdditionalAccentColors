@@ -12,13 +12,13 @@
 		FA82A153294F2E9800410378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A152294F2E9800410378 /* AppDelegate.swift */; };
 		FA82A155294F2E9900410378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA82A154294F2E9900410378 /* Assets.xcassets */; };
 		FA82A158294F2E9900410378 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A156294F2E9900410378 /* MainMenu.xib */; };
-		FA82A15D294F315C00410378 /* AdditionalAccentColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* AdditionalAccentColors.swift */; };
+		FA82A15D294F315C00410378 /* PrefPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* PrefPane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrefPane-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA82A127294F2C2800410378 /* AdditionalAccentColors.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdditionalAccentColors.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA82A12C294F2C2800410378 /* AdditionalAccentColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalAccentColors.swift; sourceTree = "<group>"; };
+		FA82A12C294F2C2800410378 /* PrefPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefPane.swift; sourceTree = "<group>"; };
 		FA82A12E294F2C2800410378 /* AdditionalAccentColors.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AdditionalAccentColors.tiff; sourceTree = "<group>"; };
 		FA82A131294F2C2800410378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AdditionalAccentColors.xib; sourceTree = "<group>"; };
 		FA82A133294F2C2800410378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				FA82A12E294F2C2800410378 /* AdditionalAccentColors.tiff */,
 				FA82A130294F2C2800410378 /* AdditionalAccentColors.xib */,
 				FA82A133294F2C2800410378 /* Info.plist */,
-				FA82A12C294F2C2800410378 /* AdditionalAccentColors.swift */,
+				FA82A12C294F2C2800410378 /* PrefPane.swift */,
 				FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */,
 			);
 			path = AdditionalAccentColors;
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA82A15D294F315C00410378 /* AdditionalAccentColors.swift in Sources */,
+				FA82A15D294F315C00410378 /* PrefPane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +365,7 @@
 				INFOPLIST_FILE = AdditionalAccentColors/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = AdditionalAccentColors;
-				INFOPLIST_KEY_NSPrincipalClass = AdditionalAccentColors;
+				INFOPLIST_KEY_NSPrincipalClass = PrefPane;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,7 +404,7 @@
 				INFOPLIST_FILE = AdditionalAccentColors/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = AdditionalAccentColors;
-				INFOPLIST_KEY_NSPrincipalClass = AdditionalAccentColors;
+				INFOPLIST_KEY_NSPrincipalClass = PrefPane;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

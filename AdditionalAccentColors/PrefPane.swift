@@ -7,7 +7,7 @@
 
 import PreferencePanes
 
-class AdditionalAccentColors : NSPreferencePane {
+class PrefPane : NSPreferencePane {
 
 	@IBOutlet weak var testTextField: NSTextField!
 	
