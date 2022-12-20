@@ -7,7 +7,11 @@
 
 import PreferencePanes
 
-class PrefPane : NSPreferencePane {
+
+
+class PrefPane : NSPreferencePane
+{
+	@IBOutlet weak var window: NSWindow!
 
 	@IBOutlet weak var testTextField: NSTextField!
 	

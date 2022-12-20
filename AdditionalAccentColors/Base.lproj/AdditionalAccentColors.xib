@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="_window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
                 <outlet property="testTextField" destination="p51-29-vat" id="vB5-Kh-lbT"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="1I6-Ce-rKe"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
