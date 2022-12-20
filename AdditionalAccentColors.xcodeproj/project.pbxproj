@@ -13,6 +13,8 @@
 		FA82A155294F2E9900410378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA82A154294F2E9900410378 /* Assets.xcassets */; };
 		FA82A158294F2E9900410378 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A156294F2E9900410378 /* MainMenu.xib */; };
 		FA82A15D294F315C00410378 /* PrefPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* PrefPane.swift */; };
+		FA8453032952025500A283DC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8453022952025500A283DC /* Media.xcassets */; };
+		FA8453042952025B00A283DC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8453022952025500A283DC /* Media.xcassets */; };
 		FA8B1B0F295167CC0076694B /* AdditionalAccentColors.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A130294F2C2800410378 /* AdditionalAccentColors.xib */; };
 		FA8B1B12295168910076694B /* PreferencePaneWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B1B11295168910076694B /* PreferencePaneWrapper.swift */; };
 		FA8B1B2C29517FF50076694B /* PrefPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* PrefPane.swift */; };
@@ -30,6 +32,7 @@
 		FA82A154294F2E9900410378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA82A157294F2E9900410378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FA82A159294F2E9900410378 /* StandaloneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StandaloneApp.entitlements; sourceTree = "<group>"; };
+		FA8453022952025500A283DC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		FA8B1B11295168910076694B /* PreferencePaneWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencePaneWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +80,7 @@
 				FA82A133294F2C2800410378 /* Info.plist */,
 				FA82A12C294F2C2800410378 /* PrefPane.swift */,
 				FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */,
+				FA8453022952025500A283DC /* Media.xcassets */,
 			);
 			path = AdditionalAccentColors;
 			sourceTree = "<group>";
@@ -185,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA82A12F294F2C2800410378 /* AdditionalAccentColors.tiff in Resources */,
+				FA8453042952025B00A283DC /* Media.xcassets in Resources */,
 				FA82A132294F2C2800410378 /* AdditionalAccentColors.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +200,7 @@
 			files = (
 				FA8B1B0F295167CC0076694B /* AdditionalAccentColors.xib in Resources */,
 				FA82A155294F2E9900410378 /* Assets.xcassets in Resources */,
+				FA8453032952025500A283DC /* Media.xcassets in Resources */,
 				FA82A158294F2E9900410378 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

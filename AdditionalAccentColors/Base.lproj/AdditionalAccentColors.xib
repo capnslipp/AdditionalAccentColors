@@ -9,7 +9,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="PrefPane" customModule="AdditionalAccentColors" customModuleProvider="target">
             <connections>
                 <outlet property="_window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
-                <outlet property="testTextField" destination="p51-29-vat" id="vB5-Kh-lbT"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="1I6-Ce-rKe"/>
             </connections>
         </customObject>
@@ -20,20 +19,471 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="176" y="715" width="668" height="368"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1984" height="1215"/>
-            <view key="contentView" id="se5-gp-TjO">
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="668" height="368"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <userGuides>
+                    <userLayoutGuide location="244" affinity="minX"/>
+                </userGuides>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p51-29-vat" userLabel="Test Text Label">
-                        <rect key="frame" x="18" y="332" width="100" height="16"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="k84-Dq-T1G" userLabel="Standard Accent Colors">
+                        <rect key="frame" x="0.0" y="330" width="668" height="18"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rr9-Dx-fD7">
+                                <rect key="frame" x="97" y="2" width="149" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Standard accent colors:" id="2wN-Cd-mrx">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="24j-WR-s0M" userLabel="Multicolor Button">
+                                <rect key="frame" x="248" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="EaE-Aj-K0Z"/>
+                                    <constraint firstAttribute="width" constant="18" id="rM4-3D-8Eh"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorPosterize">
+                                        <configuration>
+                                            <null key="inputImage"/>
+                                            <real key="inputLevels" value="5"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Multicolor" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="3jb-3L-FeD">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="bBQ-tc-Tjh"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHY-PD-LUf" userLabel="Blue Button">
+                                <rect key="frame" x="272" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="Qsr-uO-7rR"/>
+                                    <constraint firstAttribute="height" constant="18" id="jHn-G8-ssR"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="0.039215686274509803" green="0.51764705882352946" blue="1" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Blue" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="34r-mz-jLB">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="mQ1-Zn-FyH"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B8h-Ms-vzN" userLabel="Purple Button">
+                                <rect key="frame" x="296" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="fvR-iW-IRn"/>
+                                    <constraint firstAttribute="width" constant="18" id="ule-46-QYC"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="0.74901960784313726" green="0.35294117647058826" blue="0.94901960784313721" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Purple" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="hdM-nG-Vyd">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemPurpleColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="gMa-8d-ybQ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yyI-9s-w1J" userLabel="Pink Button">
+                                <rect key="frame" x="320" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="P8d-aV-4d9"/>
+                                    <constraint firstAttribute="height" constant="18" id="ehR-DP-I3o"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="1" green="0.21568627450980393" blue="0.37254901960784315" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Pink" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="emL-gu-gWd">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemPinkColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="ugc-xj-XOv"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8UH-c7-FTS" userLabel="Red Button">
+                                <rect key="frame" x="344" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Spx-L3-i6G"/>
+                                    <constraint firstAttribute="width" constant="18" id="p6q-v5-IDw"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="1" green="0.27058823529411763" blue="0.22745098039215686" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Red" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="1Vg-Mp-wnS">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="WhD-UC-umg"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Upk-0D-Soc" userLabel="Orange Button">
+                                <rect key="frame" x="368" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="GFI-8N-tUg"/>
+                                    <constraint firstAttribute="height" constant="18" id="Wmc-zD-KK7"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="1" green="0.62352941176470589" blue="0.039215686274509803" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Orange" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="KcA-ej-qvo">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="8LO-yR-hUv"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-2E-g60" userLabel="Yellow Button">
+                                <rect key="frame" x="392" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="e2a-7D-Wno"/>
+                                    <constraint firstAttribute="width" constant="18" id="irI-sA-lCl"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="1" green="0.83921568627450982" blue="0.039215686274509803" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Yellow" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="dYL-xz-PEI">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="IIQ-kc-HK3"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-aY-KnA" userLabel="Green Button">
+                                <rect key="frame" x="416" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="cfZ-Pp-UXq"/>
+                                    <constraint firstAttribute="height" constant="18" id="rfg-rh-309"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="0.19607843137254902" green="0.84313725490196079" blue="0.29411764705882354" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Green" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="tRc-Fy-LAs">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="0LA-cg-93h"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-zT-lED" userLabel="Graphite Button">
+                                <rect key="frame" x="440" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="a4t-jL-D6m"/>
+                                    <constraint firstAttribute="width" constant="18" id="mje-bU-edq"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIColorMonochrome">
+                                        <configuration>
+                                            <ciColor key="inputColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.61568627450980395" alpha="1"/>
+                                            <null key="inputImage"/>
+                                            <real key="inputIntensity" value="1"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="Graphite" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="I7p-mh-svz">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                <color key="contentTintColor" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="2DE-AH-8Vg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="yyI-9s-w1J" firstAttribute="leading" secondItem="B8h-Ms-vzN" secondAttribute="trailing" constant="6" id="0un-qz-FfG"/>
+                            <constraint firstItem="ns7-2E-g60" firstAttribute="top" secondItem="Upk-0D-Soc" secondAttribute="top" id="2NV-oi-aZJ"/>
+                            <constraint firstItem="Upk-0D-Soc" firstAttribute="leading" secondItem="8UH-c7-FTS" secondAttribute="trailing" constant="6" id="8Ku-ME-26q"/>
+                            <constraint firstItem="B8h-Ms-vzN" firstAttribute="top" secondItem="YHY-PD-LUf" secondAttribute="top" id="8mi-NS-xCP"/>
+                            <constraint firstItem="rr9-Dx-fD7" firstAttribute="trailing" secondItem="k84-Dq-T1G" secondAttribute="leading" constant="244" id="DCb-Tz-Dck"/>
+                            <constraint firstItem="24j-WR-s0M" firstAttribute="top" secondItem="k84-Dq-T1G" secondAttribute="top" id="Dff-MC-xcO"/>
+                            <constraint firstItem="Upk-0D-Soc" firstAttribute="top" secondItem="8UH-c7-FTS" secondAttribute="top" id="FGp-1V-L7y"/>
+                            <constraint firstItem="24j-WR-s0M" firstAttribute="leading" secondItem="rr9-Dx-fD7" secondAttribute="trailing" constant="6" id="IxW-VG-hLU"/>
+                            <constraint firstItem="rr9-Dx-fD7" firstAttribute="top" secondItem="k84-Dq-T1G" secondAttribute="top" id="O4C-U9-j4Z"/>
+                            <constraint firstItem="24j-WR-s0M" firstAttribute="top" secondItem="rr9-Dx-fD7" secondAttribute="top" id="TFd-1l-sVH"/>
+                            <constraint firstItem="YHY-PD-LUf" firstAttribute="leading" secondItem="24j-WR-s0M" secondAttribute="trailing" constant="6" id="ThX-mA-clN"/>
+                            <constraint firstItem="bVC-zT-lED" firstAttribute="top" secondItem="hNE-aY-KnA" secondAttribute="top" id="TjH-GM-kuD"/>
+                            <constraint firstItem="ns7-2E-g60" firstAttribute="leading" secondItem="Upk-0D-Soc" secondAttribute="trailing" constant="6" id="YVG-ro-eOB"/>
+                            <constraint firstItem="B8h-Ms-vzN" firstAttribute="leading" secondItem="YHY-PD-LUf" secondAttribute="trailing" constant="6" id="ddR-Gg-QQC"/>
+                            <constraint firstItem="bVC-zT-lED" firstAttribute="leading" secondItem="hNE-aY-KnA" secondAttribute="trailing" constant="6" id="fSF-kv-19m"/>
+                            <constraint firstItem="yyI-9s-w1J" firstAttribute="top" secondItem="B8h-Ms-vzN" secondAttribute="top" id="jiz-H0-Z6b"/>
+                            <constraint firstItem="hNE-aY-KnA" firstAttribute="leading" secondItem="ns7-2E-g60" secondAttribute="trailing" constant="6" id="jk6-TB-9bi"/>
+                            <constraint firstItem="YHY-PD-LUf" firstAttribute="top" secondItem="24j-WR-s0M" secondAttribute="top" id="nS6-Qu-HBs"/>
+                            <constraint firstItem="hNE-aY-KnA" firstAttribute="top" secondItem="ns7-2E-g60" secondAttribute="top" id="tJV-eQ-2Ve"/>
+                            <constraint firstItem="8UH-c7-FTS" firstAttribute="top" secondItem="yyI-9s-w1J" secondAttribute="top" id="u6h-8m-uc8"/>
+                            <constraint firstItem="8UH-c7-FTS" firstAttribute="leading" secondItem="yyI-9s-w1J" secondAttribute="trailing" constant="6" id="zSM-RZ-bR3"/>
+                            <constraint firstAttribute="bottom" secondItem="24j-WR-s0M" secondAttribute="bottom" id="zUZ-rH-NIv"/>
+                        </constraints>
+                    </customView>
+                    <customView id="523-bP-f23" userLabel="Hardware Accent Colors">
+                        <rect key="frame" x="0.0" y="308" width="668" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="ahR-xb-nQJ" userLabel="Test Text Label">
-                            <font key="font" usesAppearanceFont="YES"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dF9-Jj-cum" userLabel="Hardware accent colors:">
+                                <rect key="frame" x="94" y="2" width="152" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Hardware accent colors:" id="owE-bS-iBg">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kvA-K2-U4l" userLabel="iMac Green">
+                                <rect key="frame" x="248" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="lXj-35-D4x"/>
+                                    <constraint firstAttribute="height" constant="18" id="zsw-L8-C3x"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIFalseColor">
+                                        <configuration>
+                                            <ciColor key="inputColor0" red="0.20000000000000001" green="0.3529411764705882" blue="0.36862745098039218" alpha="1"/>
+                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
+                                            <null key="inputImage"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="iMac Green" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="TFc-vW-HFm">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" red="0.20000000000000001" green="0.35294117647058826" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="contentTintColor" red="0.20000000000000001" green="0.3529411764705882" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="7v2-s7-NWI"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3rv-lS-weg" userLabel="iMac Yelllow">
+                                <rect key="frame" x="272" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="Aid-Ep-sP1"/>
+                                    <constraint firstAttribute="height" constant="18" id="LWb-yL-2Gs"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIFalseColor">
+                                        <configuration>
+                                            <ciColor key="inputColor0" red="0.74117647058823533" green="0.54117647058823526" blue="0.21568627450980393" alpha="1"/>
+                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
+                                            <null key="inputImage"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="iMac Yellow" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="TFg-C8-vt4">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" red="0.74117647058823533" green="0.54117647058823526" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="contentTintColor" red="0.74117647058823533" green="0.54117647058823526" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="boB-Ur-f0E"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="maU-g9-kWC" userLabel="iMac Orange">
+                                <rect key="frame" x="296" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="6XK-pr-eej"/>
+                                    <constraint firstAttribute="width" constant="18" id="Np5-RA-T8k"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIFalseColor">
+                                        <configuration>
+                                            <ciColor key="inputColor0" red="0.70980392156862748" green="0.38823529411764707" blue="0.25490196078431371" alpha="1"/>
+                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
+                                            <null key="inputImage"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="iMac Orange" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="wG3-NG-bdY">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" red="0.70980392156862748" green="0.38823529411764707" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="contentTintColor" red="0.70980392156862748" green="0.38823529411764707" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="63h-Eg-Ecl"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J19-SB-uI6" userLabel="iMac Pink">
+                                <rect key="frame" x="320" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="EBm-bH-mxy"/>
+                                    <constraint firstAttribute="height" constant="18" id="PRR-eV-9Er"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIFalseColor">
+                                        <configuration>
+                                            <ciColor key="inputColor0" red="0.59607843137254901" green="0.25098039215686274" blue="0.24313725490196078" alpha="1"/>
+                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
+                                            <null key="inputImage"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="iMac Pink" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="97Y-T5-04B">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" red="0.59215686274509804" green="0.25098039215686274" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="contentTintColor" red="0.59215686274509804" green="0.25098039215686274" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="FLg-cV-hbc"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-UX-v8Z" userLabel="iMac Purple">
+                                <rect key="frame" x="344" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="IH7-AP-3Td"/>
+                                    <constraint firstAttribute="height" constant="18" id="pLd-pf-QeF"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIFalseColor">
+                                        <configuration>
+                                            <ciColor key="inputColor0" red="0.24705882352941178" green="0.25882352941176467" blue="0.41568627450980389" alpha="1"/>
+                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
+                                            <null key="inputImage"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="iMac Purple" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="eZi-zP-zrQ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" red="0.24705882352941178" green="0.25882352941176473" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="contentTintColor" red="0.24705882352941178" green="0.25882352941176467" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="0kO-4d-Ab6"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FZz-bf-ZJJ" userLabel="iMac Blue">
+                                <rect key="frame" x="368" y="-2" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="ecI-LE-m2h"/>
+                                    <constraint firstAttribute="width" constant="18" id="pPc-lt-ygo"/>
+                                </constraints>
+                                <contentFilters>
+                                    <ciFilter name="CIFalseColor">
+                                        <configuration>
+                                            <ciColor key="inputColor0" red="0.22352941176470587" green="0.33333333333333331" blue="0.41960784313725491" alpha="1"/>
+                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
+                                            <null key="inputImage"/>
+                                        </configuration>
+                                    </ciFilter>
+                                </contentFilters>
+                                <buttonCell key="cell" type="radio" title="iMac Blue" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="Ghc-BA-wV4">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" red="0.22745098039215686" green="0.32941176470588235" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="contentTintColor" red="0.22745098039215686" green="0.32941176470588235" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pressedColorButton:" target="-2" id="pVM-tq-cm1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dF9-Jj-cum" firstAttribute="top" secondItem="523-bP-f23" secondAttribute="top" id="1dw-RY-qOn"/>
+                            <constraint firstItem="rc9-UX-v8Z" firstAttribute="leading" secondItem="J19-SB-uI6" secondAttribute="trailing" constant="6" id="3dM-db-hYZ"/>
+                            <constraint firstItem="3rv-lS-weg" firstAttribute="leading" secondItem="kvA-K2-U4l" secondAttribute="trailing" constant="6" id="850-mJ-lpB"/>
+                            <constraint firstItem="kvA-K2-U4l" firstAttribute="top" secondItem="dF9-Jj-cum" secondAttribute="top" id="K0h-JF-frc"/>
+                            <constraint firstItem="rc9-UX-v8Z" firstAttribute="top" secondItem="J19-SB-uI6" secondAttribute="top" id="aoS-qm-1ti"/>
+                            <constraint firstItem="J19-SB-uI6" firstAttribute="leading" secondItem="maU-g9-kWC" secondAttribute="trailing" constant="6" id="bqW-oD-P1C"/>
+                            <constraint firstItem="3rv-lS-weg" firstAttribute="top" secondItem="kvA-K2-U4l" secondAttribute="top" id="cjp-mM-1i9"/>
+                            <constraint firstItem="dF9-Jj-cum" firstAttribute="trailing" secondItem="523-bP-f23" secondAttribute="leading" constant="244" id="dc3-i1-qsZ"/>
+                            <constraint firstItem="kvA-K2-U4l" firstAttribute="leading" secondItem="dF9-Jj-cum" secondAttribute="trailing" constant="6" id="dk4-rY-1QK"/>
+                            <constraint firstItem="FZz-bf-ZJJ" firstAttribute="leading" secondItem="rc9-UX-v8Z" secondAttribute="trailing" constant="6" id="gIw-fa-q5B"/>
+                            <constraint firstItem="kvA-K2-U4l" firstAttribute="top" secondItem="523-bP-f23" secondAttribute="top" id="i4q-vo-eti"/>
+                            <constraint firstItem="FZz-bf-ZJJ" firstAttribute="top" secondItem="rc9-UX-v8Z" secondAttribute="top" id="iUC-1r-X9J"/>
+                            <constraint firstAttribute="bottom" secondItem="kvA-K2-U4l" secondAttribute="bottom" id="k7e-a1-j89"/>
+                            <constraint firstItem="maU-g9-kWC" firstAttribute="top" secondItem="3rv-lS-weg" secondAttribute="top" id="n2w-8U-k2j"/>
+                            <constraint firstItem="maU-g9-kWC" firstAttribute="leading" secondItem="3rv-lS-weg" secondAttribute="trailing" constant="6" id="rxv-sn-V51"/>
+                            <constraint firstItem="J19-SB-uI6" firstAttribute="top" secondItem="maU-g9-kWC" secondAttribute="top" id="ycA-Vx-cgu"/>
+                        </constraints>
+                    </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-16-hlj" userLabel="Description Label">
+                        <rect key="frame" x="246" y="288" width="74" height="16"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Description" id="29M-MB-2eq">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="aoc-16-hlj" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="248" id="43N-Vr-1xa"/>
+                    <constraint firstItem="k84-Dq-T1G" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="8FO-Qq-tvn"/>
+                    <constraint firstItem="523-bP-f23" firstAttribute="top" secondItem="k84-Dq-T1G" secondAttribute="bottom" constant="4" id="A6Z-lv-T2V"/>
+                    <constraint firstAttribute="trailing" secondItem="k84-Dq-T1G" secondAttribute="trailing" id="HUy-rE-aE8"/>
+                    <constraint firstItem="aoc-16-hlj" firstAttribute="top" secondItem="523-bP-f23" secondAttribute="bottom" constant="4" id="NKT-Zr-n5c"/>
+                    <constraint firstItem="k84-Dq-T1G" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="nHF-iV-mM2"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="132" y="-82"/>
         </window>

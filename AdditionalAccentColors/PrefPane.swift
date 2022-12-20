@@ -12,13 +12,9 @@ import PreferencePanes
 class PrefPane : NSPreferencePane
 {
 	@IBOutlet weak var window: NSWindow!
-
-	@IBOutlet weak var testTextField: NSTextField!
 	
 	override func mainViewDidLoad()
 	{
-		self.testTextField.stringValue = "It worked!"
-		
 		//let alert = NSAlert()
 		//alert.messageText = "This is the message text"
 		//alert.informativeText = "This is the informative text"
@@ -31,6 +27,10 @@ class PrefPane : NSPreferencePane
 		//} else {
 		//	print("Cancel button clicked")
 		//}
+	}
+	
+	
+	@IBAction func pressedColorButton(_ sender: NSButton) {
 	}
 	
 }
