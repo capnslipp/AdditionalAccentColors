@@ -20,10 +20,17 @@ class ColoredRadioButton: NSButton
 	}
 	
 	
-	@objc var color: NSColor!
+	var color: NSColor {
+		var value = self.contentTintColor ?? NSColor.controlAccentColor
+		if value.type == .catalog {
+			value = value.usingType(.componentBased)!
+		}
+		value = value.usingColorSpace(.sRGB)!
+		return value
+	}
 	
 	var circleFillColor: NSColor {
-		self.color ?? self.contentTintColor ?? NSColor.controlAccentColor
+		self.color
 	}
 	var circleOutlineColor: NSColor {
 		self.circleFillColor.highlight(withLevel: 0.5)!
@@ -35,8 +42,8 @@ class ColoredRadioButton: NSButton
 	override func draw(_ dirtyRect: NSRect)
 	{
 		{
-			//let circle = NSBezierPath(ovalIn: self.bounds)
 			let circleRect = NSInsetRect(self.bounds, 1.0, 1.0);
+			
 			self.circleFillColor.set()
 			$0.fillEllipse(in: circleRect)
 			
@@ -46,7 +53,7 @@ class ColoredRadioButton: NSButton
 			
 			if (self.state) == .on {
 				let dotRect = NSInsetRect(self.bounds, 6.0, 6.0);
-				//let dot = NSBezierPath(ovalIn: dotRect)
+				
 				self.dotColor.set()
 				$0.fillEllipse(in: dotRect)
 			}
