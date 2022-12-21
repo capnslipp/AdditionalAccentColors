@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -12,7 +13,11 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AdditionalAccentColors" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AdditionalAccentColors" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="IKF-Jl-40Z" id="qYS-aa-yVA"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -676,5 +681,17 @@
             </items>
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
+        <window title="Additional Accent Colors" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" id="IKF-Jl-40Z" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
+            <rect key="contentRect" x="714" y="490" width="668" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1984" height="1215"/>
+            <value key="minSize" type="size" width="668" height="0.0"/>
+            <value key="maxSize" type="size" width="668" height="10000"/>
+            <view key="contentView" id="YQC-Hf-F9D">
+                <rect key="frame" x="0.0" y="0.0" width="668" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+            <point key="canvasLocation" x="205" y="357"/>
+        </window>
     </objects>
 </document>

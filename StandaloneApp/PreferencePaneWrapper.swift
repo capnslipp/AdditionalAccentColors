@@ -10,56 +10,74 @@ import PreferencePanes
 
 
 
-class PreferencePaneWrapper : NSWindowController
+class PreferencePaneWrapper : NSWindowController, NSWindowDelegate
 {
 	private override init(window: NSWindow?) {
 		super.init(window: window)
 	}
 	
-	//init(preferencePane: NSPreferencePane, nib: NSNib)
-	//{
-	//	self.preferencePane = preferencePane
-	//	self.nib = nib
-	//}
-	
-	convenience init(preferencePane: NSPreferencePane, nibName: NSNib.Name, bundle nibBundle: Bundle? = nil)
+	convenience init(nibName: NSNib.Name, bundle nibBundle: Bundle? = nil, window: NSWindow)
 	{
-		self.init(windowNibName: nibName, owner: preferencePane)
-		// Obj-C-style subclass init after superclass init, since NSWindowController seems to replace `self` (probably a class cluster).
-		self.preferencePane = preferencePane
+		self.init(window: nil)
+		
+		_window = window
+		
+		self.preferencePane = {
+			let nibBundle = nibBundle ?? Bundle(for: PrefPane.self)
+			
+			let pane = PrefPane(bundle: nibBundle)
+			pane.mainNibName = nibName
+			return pane
+		}()
 	}
 	
 	required init?(coder: NSCoder) {
 		super.init(coder: coder)
-		self.preferencePane = super.owner as! NSPreferencePane?
+		self.preferencePane = super.owner as! PrefPane?
 	}
 	
-	private(set) var preferencePane: NSPreferencePane!
-	//private(set) var nib: NSNib
+	private(set) var preferencePane: PrefPane!
+	
+	private var _window: NSWindow?
+	
+	var _isWindowLoaded: Bool = false
+	override var isWindowLoaded: Bool { _isWindowLoaded }
 	
 	
 	override func loadWindow()
 	{
-		//print("loadWindow()")
-		super.loadWindow()
-		//let preferencePaneClass = type(of: preferencePane)
-		//let nibBundle = nibBundle ?? Bundle(for: preferencePaneClass)
-		//let nib = NSNib(nibNamed: nibName, bundle: nibBundle)!
-		//self.init(preferencePane: preferencePane, nib: nib)
-	}
-	
-	override func windowWillLoad()
-	{
-		//print("windowWillLoad()")
-		super.windowDidLoad()
-	}
-	
-	override func windowDidLoad()
-	{
-		//print("windowDidLoad()")
-		super.windowDidLoad()
+		print("loadWindow()")
 		
-		// Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+		if let window = _window {
+			self.window = window
+			window.delegate = self
+			_isWindowLoaded = true
+		}
+		else {
+			super.loadWindow()
+			_isWindowLoaded = super.isWindowLoaded
+		}
 	}
-
+	
+	override func windowDidLoad() {
+		loadPrefPaneMainView()
+	}
+	
+	private func loadPrefPaneMainView()
+	{
+		let mainView = self.preferencePane.loadMainView()
+		
+		self.preferencePane.willSelect()
+		
+		self.window!.contentView = mainView
+		
+		self.preferencePane.didSelect()
+	}
+	
+	
+	override func showWindow(_ sender: Any?) {
+		print("showWindow(_:)")
+		
+		super.showWindow(sender)
+	}
 }

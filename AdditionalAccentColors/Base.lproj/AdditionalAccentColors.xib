@@ -8,8 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="PrefPane" customModule="AdditionalAccentColors" customModuleProvider="target">
             <connections>
-                <outlet property="_window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
-                <outlet property="window" destination="F0z-JX-Cv5" id="1I6-Ce-rKe"/>
+                <outlet property="_window" destination="F0z-JX-Cv5" id="1zQ-yk-XS5"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>

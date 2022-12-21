@@ -18,13 +18,9 @@ class AppDelegate: NSObject, NSApplicationDelegate
 
 	func applicationDidFinishLaunching(_ aNotification: Notification)
 	{
-		let prefPane = PrefPane(bundle: Bundle(for: PrefPane.self))
-		let prefPaneWrapper = PreferencePaneWrapper(preferencePane: prefPane, nibName: "AdditionalAccentColors")
+		let prefPaneWrapper = PreferencePaneWrapper(nibName: "AdditionalAccentColors", window: self.window)
 		_ = prefPaneWrapper.window
-		//self.window = prefPaneWrapper.window
-		self.window = prefPane.window
-		//prefPaneWrapper.loadWindow()
-		prefPane.window.makeKeyAndOrderFront(self)
+		prefPaneWrapper.showWindow(self)
 	}
 
 	func applicationWillTerminate(_ aNotification: Notification) {
@@ -34,7 +30,9 @@ class AppDelegate: NSObject, NSApplicationDelegate
 	func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
 		return true
 	}
-
-
+	
+	func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+		return true
+	}
 }
 
