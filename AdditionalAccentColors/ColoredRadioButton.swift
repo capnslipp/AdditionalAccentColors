@@ -33,7 +33,7 @@ class ColoredRadioButton: NSButton
 		self.color
 	}
 	var circleOutlineColor: NSColor {
-		self.circleFillColor.highlight(withLevel: 0.5)!
+		self.circleFillColor.withSystemEffect(.pressed)
 	}
 	
 	let dotColor: NSColor = NSColor.white
@@ -42,7 +42,7 @@ class ColoredRadioButton: NSButton
 	override func draw(_ dirtyRect: NSRect)
 	{
 		{
-			let circleRect = NSInsetRect(self.bounds, 1.0, 1.0);
+			let circleRect = NSInsetRect(self.bounds, 1.5, 1.5);
 			
 			self.circleFillColor.set()
 			$0.fillEllipse(in: circleRect)
