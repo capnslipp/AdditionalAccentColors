@@ -43,14 +43,6 @@
                                     <constraint firstAttribute="height" constant="18" id="EaE-Aj-K0Z"/>
                                     <constraint firstAttribute="width" constant="18" id="rM4-3D-8Eh"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorPosterize">
-                                        <configuration>
-                                            <null key="inputImage"/>
-                                            <real key="inputLevels" value="5"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Multicolor" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="3jb-3L-FeD">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -65,15 +57,6 @@
                                     <constraint firstAttribute="width" constant="18" id="Qsr-uO-7rR"/>
                                     <constraint firstAttribute="height" constant="18" id="jHn-G8-ssR"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="0.039215686274509803" green="0.51764705882352946" blue="1" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Blue" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="34r-mz-jLB">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -90,15 +73,6 @@
                                     <constraint firstAttribute="height" constant="18" id="fvR-iW-IRn"/>
                                     <constraint firstAttribute="width" constant="18" id="ule-46-QYC"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="0.74901960784313726" green="0.35294117647058826" blue="0.94901960784313721" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Purple" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="hdM-nG-Vyd">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -115,15 +89,6 @@
                                     <constraint firstAttribute="width" constant="18" id="P8d-aV-4d9"/>
                                     <constraint firstAttribute="height" constant="18" id="ehR-DP-I3o"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="1" green="0.21568627450980393" blue="0.37254901960784315" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Pink" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="emL-gu-gWd">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -140,15 +105,6 @@
                                     <constraint firstAttribute="height" constant="18" id="Spx-L3-i6G"/>
                                     <constraint firstAttribute="width" constant="18" id="p6q-v5-IDw"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="1" green="0.27058823529411763" blue="0.22745098039215686" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Red" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="1Vg-Mp-wnS">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -165,15 +121,6 @@
                                     <constraint firstAttribute="width" constant="18" id="GFI-8N-tUg"/>
                                     <constraint firstAttribute="height" constant="18" id="Wmc-zD-KK7"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="1" green="0.62352941176470589" blue="0.039215686274509803" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Orange" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="KcA-ej-qvo">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -190,15 +137,6 @@
                                     <constraint firstAttribute="height" constant="18" id="e2a-7D-Wno"/>
                                     <constraint firstAttribute="width" constant="18" id="irI-sA-lCl"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="1" green="0.83921568627450982" blue="0.039215686274509803" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Yellow" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="dYL-xz-PEI">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -215,15 +153,6 @@
                                     <constraint firstAttribute="width" constant="18" id="cfZ-Pp-UXq"/>
                                     <constraint firstAttribute="height" constant="18" id="rfg-rh-309"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="0.19607843137254902" green="0.84313725490196079" blue="0.29411764705882354" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Green" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="tRc-Fy-LAs">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -240,15 +169,6 @@
                                     <constraint firstAttribute="height" constant="18" id="a4t-jL-D6m"/>
                                     <constraint firstAttribute="width" constant="18" id="mje-bU-edq"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIColorMonochrome">
-                                        <configuration>
-                                            <ciColor key="inputColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.61568627450980395" alpha="1"/>
-                                            <null key="inputImage"/>
-                                            <real key="inputIntensity" value="1"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="Graphite" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="I7p-mh-svz">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -303,15 +223,6 @@
                                     <constraint firstAttribute="width" constant="18" id="lXj-35-D4x"/>
                                     <constraint firstAttribute="height" constant="18" id="zsw-L8-C3x"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIFalseColor">
-                                        <configuration>
-                                            <ciColor key="inputColor0" red="0.20000000000000001" green="0.3529411764705882" blue="0.36862745098039218" alpha="1"/>
-                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
-                                            <null key="inputImage"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="iMac Green" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="TFc-vW-HFm">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -328,15 +239,6 @@
                                     <constraint firstAttribute="width" constant="18" id="Aid-Ep-sP1"/>
                                     <constraint firstAttribute="height" constant="18" id="LWb-yL-2Gs"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIFalseColor">
-                                        <configuration>
-                                            <ciColor key="inputColor0" red="0.74117647058823533" green="0.54117647058823526" blue="0.21568627450980393" alpha="1"/>
-                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
-                                            <null key="inputImage"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="iMac Yellow" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="TFg-C8-vt4">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -353,15 +255,6 @@
                                     <constraint firstAttribute="height" constant="18" id="6XK-pr-eej"/>
                                     <constraint firstAttribute="width" constant="18" id="Np5-RA-T8k"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIFalseColor">
-                                        <configuration>
-                                            <ciColor key="inputColor0" red="0.70980392156862748" green="0.38823529411764707" blue="0.25490196078431371" alpha="1"/>
-                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
-                                            <null key="inputImage"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="iMac Orange" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="wG3-NG-bdY">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -378,15 +271,6 @@
                                     <constraint firstAttribute="width" constant="18" id="EBm-bH-mxy"/>
                                     <constraint firstAttribute="height" constant="18" id="PRR-eV-9Er"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIFalseColor">
-                                        <configuration>
-                                            <ciColor key="inputColor0" red="0.59607843137254901" green="0.25098039215686274" blue="0.24313725490196078" alpha="1"/>
-                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
-                                            <null key="inputImage"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="iMac Pink" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="97Y-T5-04B">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -403,15 +287,6 @@
                                     <constraint firstAttribute="width" constant="18" id="IH7-AP-3Td"/>
                                     <constraint firstAttribute="height" constant="18" id="pLd-pf-QeF"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIFalseColor">
-                                        <configuration>
-                                            <ciColor key="inputColor0" red="0.24705882352941178" green="0.25882352941176467" blue="0.41568627450980389" alpha="1"/>
-                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
-                                            <null key="inputImage"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="iMac Purple" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="eZi-zP-zrQ">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -428,15 +303,6 @@
                                     <constraint firstAttribute="height" constant="18" id="ecI-LE-m2h"/>
                                     <constraint firstAttribute="width" constant="18" id="pPc-lt-ygo"/>
                                 </constraints>
-                                <contentFilters>
-                                    <ciFilter name="CIFalseColor">
-                                        <configuration>
-                                            <ciColor key="inputColor0" red="0.22352941176470587" green="0.33333333333333331" blue="0.41960784313725491" alpha="1"/>
-                                            <ciColor key="inputColor1" red="1" green="1" blue="1" alpha="1"/>
-                                            <null key="inputImage"/>
-                                        </configuration>
-                                    </ciFilter>
-                                </contentFilters>
                                 <buttonCell key="cell" type="radio" title="iMac Blue" bezelStyle="regularSquare" imagePosition="only" imageScaling="proportionallyUpOrDown" inset="2" id="Ghc-BA-wV4">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
