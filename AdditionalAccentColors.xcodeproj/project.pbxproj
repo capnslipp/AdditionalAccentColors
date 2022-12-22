@@ -15,6 +15,8 @@
 		FA82A15D294F315C00410378 /* PrefPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* PrefPane.swift */; };
 		FA8453032952025500A283DC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8453022952025500A283DC /* Media.xcassets */; };
 		FA8453042952025B00A283DC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8453022952025500A283DC /* Media.xcassets */; };
+		FA89441329544E3D0064A9FD /* HacksForNSPrefRemoteViewService.h in Headers */ = {isa = PBXBuildFile; fileRef = FA89441129544E3D0064A9FD /* HacksForNSPrefRemoteViewService.h */; };
+		FA89441429544E3D0064A9FD /* HacksForNSPrefRemoteViewService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA89441229544E3D0064A9FD /* HacksForNSPrefRemoteViewService.m */; };
 		FA8B1B0F295167CC0076694B /* AdditionalAccentColors.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A130294F2C2800410378 /* AdditionalAccentColors.xib */; };
 		FA8B1B12295168910076694B /* PreferencePaneWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B1B11295168910076694B /* PreferencePaneWrapper.swift */; };
 		FA8B1B2C29517FF50076694B /* PrefPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* PrefPane.swift */; };
@@ -35,6 +37,8 @@
 		FA82A157294F2E9900410378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FA82A159294F2E9900410378 /* StandaloneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StandaloneApp.entitlements; sourceTree = "<group>"; };
 		FA8453022952025500A283DC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FA89441129544E3D0064A9FD /* HacksForNSPrefRemoteViewService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HacksForNSPrefRemoteViewService.h; sourceTree = "<group>"; };
+		FA89441229544E3D0064A9FD /* HacksForNSPrefRemoteViewService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HacksForNSPrefRemoteViewService.m; sourceTree = "<group>"; };
 		FA8B1B11295168910076694B /* PreferencePaneWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencePaneWrapper.swift; sourceTree = "<group>"; };
 		FAFC4591295209EF0079A047 /* ColoredRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredRadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +89,8 @@
 				FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */,
 				FA8453022952025500A283DC /* Media.xcassets */,
 				FAFC4591295209EF0079A047 /* ColoredRadioButton.swift */,
+				FA89441129544E3D0064A9FD /* HacksForNSPrefRemoteViewService.h */,
+				FA89441229544E3D0064A9FD /* HacksForNSPrefRemoteViewService.m */,
 			);
 			path = AdditionalAccentColors;
 			sourceTree = "<group>";
@@ -108,6 +114,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA89441329544E3D0064A9FD /* HacksForNSPrefRemoteViewService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFC4592295209EF0079A047 /* ColoredRadioButton.swift in Sources */,
+				FA89441429544E3D0064A9FD /* HacksForNSPrefRemoteViewService.m in Sources */,
 				FA82A15D294F315C00410378 /* PrefPane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
