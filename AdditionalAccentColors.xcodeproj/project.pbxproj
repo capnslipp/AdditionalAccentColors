@@ -18,6 +18,8 @@
 		FA8B1B0F295167CC0076694B /* AdditionalAccentColors.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A130294F2C2800410378 /* AdditionalAccentColors.xib */; };
 		FA8B1B12295168910076694B /* PreferencePaneWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B1B11295168910076694B /* PreferencePaneWrapper.swift */; };
 		FA8B1B2C29517FF50076694B /* PrefPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A12C294F2C2800410378 /* PrefPane.swift */; };
+		FAFC4592295209EF0079A047 /* ColoredRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC4591295209EF0079A047 /* ColoredRadioButton.swift */; };
+		FAFC459329520E370079A047 /* ColoredRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC4591295209EF0079A047 /* ColoredRadioButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		FA82A159294F2E9900410378 /* StandaloneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StandaloneApp.entitlements; sourceTree = "<group>"; };
 		FA8453022952025500A283DC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		FA8B1B11295168910076694B /* PreferencePaneWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencePaneWrapper.swift; sourceTree = "<group>"; };
+		FAFC4591295209EF0079A047 /* ColoredRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredRadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				FA82A12C294F2C2800410378 /* PrefPane.swift */,
 				FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */,
 				FA8453022952025500A283DC /* Media.xcassets */,
+				FAFC4591295209EF0079A047 /* ColoredRadioButton.swift */,
 			);
 			path = AdditionalAccentColors;
 			sourceTree = "<group>";
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFC4592295209EF0079A047 /* ColoredRadioButton.swift in Sources */,
 				FA82A15D294F315C00410378 /* PrefPane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +227,7 @@
 			files = (
 				FA8B1B12295168910076694B /* PreferencePaneWrapper.swift in Sources */,
 				FA82A153294F2E9800410378 /* AppDelegate.swift in Sources */,
+				FAFC459329520E370079A047 /* ColoredRadioButton.swift in Sources */,
 				FA8B1B2C29517FF50076694B /* PrefPane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

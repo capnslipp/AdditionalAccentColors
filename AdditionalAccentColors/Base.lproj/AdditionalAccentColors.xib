@@ -37,7 +37,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="24j-WR-s0M" userLabel="Multicolor Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="24j-WR-s0M" userLabel="Multicolor Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="250" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="EaE-Aj-K0Z"/>
@@ -51,7 +51,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="bBQ-tc-Tjh"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHY-PD-LUf" userLabel="Blue Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YHY-PD-LUf" userLabel="Blue Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="274" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="Qsr-uO-7rR"/>
@@ -67,7 +67,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="mQ1-Zn-FyH"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B8h-Ms-vzN" userLabel="Purple Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B8h-Ms-vzN" userLabel="Purple Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="298" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="fvR-iW-IRn"/>
@@ -83,7 +83,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="gMa-8d-ybQ"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yyI-9s-w1J" userLabel="Pink Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yyI-9s-w1J" userLabel="Pink Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="322" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="P8d-aV-4d9"/>
@@ -99,7 +99,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="ugc-xj-XOv"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8UH-c7-FTS" userLabel="Red Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8UH-c7-FTS" userLabel="Red Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="346" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="Spx-L3-i6G"/>
@@ -115,7 +115,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="WhD-UC-umg"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Upk-0D-Soc" userLabel="Orange Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Upk-0D-Soc" userLabel="Orange Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="370" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="GFI-8N-tUg"/>
@@ -131,7 +131,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="8LO-yR-hUv"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-2E-g60" userLabel="Yellow Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-2E-g60" userLabel="Yellow Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="394" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="e2a-7D-Wno"/>
@@ -147,7 +147,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="IIQ-kc-HK3"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-aY-KnA" userLabel="Green Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-aY-KnA" userLabel="Green Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="418" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="cfZ-Pp-UXq"/>
@@ -163,7 +163,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="0LA-cg-93h"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-zT-lED" userLabel="Graphite Button">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-zT-lED" userLabel="Graphite Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="442" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="a4t-jL-D6m"/>
@@ -217,7 +217,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kvA-K2-U4l" userLabel="iMac Green">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kvA-K2-U4l" userLabel="iMac Green" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="250" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="lXj-35-D4x"/>
@@ -233,7 +233,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="7v2-s7-NWI"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3rv-lS-weg" userLabel="iMac Yelllow">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3rv-lS-weg" userLabel="iMac Yelllow" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="274" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="Aid-Ep-sP1"/>
@@ -249,7 +249,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="boB-Ur-f0E"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="maU-g9-kWC" userLabel="iMac Orange">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="maU-g9-kWC" userLabel="iMac Orange" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="298" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="6XK-pr-eej"/>
@@ -265,7 +265,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="63h-Eg-Ecl"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J19-SB-uI6" userLabel="iMac Pink">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J19-SB-uI6" userLabel="iMac Pink" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="322" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="EBm-bH-mxy"/>
@@ -281,7 +281,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="FLg-cV-hbc"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-UX-v8Z" userLabel="iMac Purple">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rc9-UX-v8Z" userLabel="iMac Purple" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="346" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="IH7-AP-3Td"/>
@@ -297,7 +297,7 @@
                                     <action selector="pressedColorButton:" target="-2" id="0kO-4d-Ab6"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FZz-bf-ZJJ" userLabel="iMac Blue">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FZz-bf-ZJJ" userLabel="iMac Blue" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="370" y="0.0" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="ecI-LE-m2h"/>
