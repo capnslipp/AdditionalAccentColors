@@ -66,6 +66,8 @@ class PrefPane : NSPreferencePane
 	{
 		log("\(Self.self)#\(#function)")
 		
+		self.descriptionLabel.stringValue = ""
+		
 		//let alert = NSAlert()
 		//alert.messageText = "This is the message text"
 		//alert.informativeText = "This is the informative text"
@@ -81,7 +83,14 @@ class PrefPane : NSPreferencePane
 	}
 	
 	
-	@IBAction func pressedColorButton(_ sender: NSButton) {
+	@IBOutlet var descriptionLabel: NSTextField!
+	
+	
+	var _selectedRadioButton: ColoredRadioButton!
+	
+	@IBAction func pressedColorButton(_ sender: ColoredRadioButton) {
+		_selectedRadioButton = sender;
+		self.descriptionLabel.stringValue = _selectedRadioButton.title;
 	}
 	
 }
