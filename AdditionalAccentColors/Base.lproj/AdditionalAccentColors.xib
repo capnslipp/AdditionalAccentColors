@@ -37,7 +37,7 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button toolTip="Multicolor" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="24j-WR-s0M" userLabel="Multicolor Button" customClass="ColoredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
+                            <button toolTip="Multicolor" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="24j-WR-s0M" userLabel="Multicolor Button" customClass="MulticoloredRadioButton" customModule="AdditionalAccentColors" customModuleProvider="target">
                                 <rect key="frame" x="250" y="52" width="18" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="EaE-Aj-K0Z"/>
