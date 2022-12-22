@@ -91,6 +91,45 @@ class PrefPane : NSPreferencePane
 	@IBAction func pressedColorButton(_ sender: ColoredRadioButton) {
 		_selectedRadioButton = sender;
 		self.descriptionLabel.stringValue = _selectedRadioButton.title;
+		
+		{
+			switch _selectedRadioButton.title {
+				case "Multicolor":
+					$0.changeAccentColor(.multicolor)
+				case "Blue":
+					$0.changeAccentColor(.blue)
+				case "Purple":
+					$0.changeAccentColor(.purple)
+				case "Pink":
+					$0.changeAccentColor(.pink)
+				case "Red":
+					$0.changeAccentColor(.red)
+				case "Orange":
+					$0.changeAccentColor(.orange)
+				case "Yellow":
+					$0.changeAccentColor(.yellow)
+				case "Green":
+					$0.changeAccentColor(.green)
+				case "Graphite":
+					$0.changeAccentColor(.graphite)
+				
+				case "iMac Green":
+					$0.changeAccentColor(.iMacGreen)
+				case "iMac Yellow":
+					$0.changeAccentColor(.iMacYellow)
+				case "iMac Orange":
+					$0.changeAccentColor(.iMacOrange)
+				case "iMac Pink":
+					$0.changeAccentColor(.iMacPink)
+				case "iMac Purple":
+					$0.changeAccentColor(.iMacPurple)
+				case "iMac Blue":
+					$0.changeAccentColor(.iMacBlue)
+				
+				default:
+					print("Unimplemented for title \(_selectedRadioButton.title)")
+			}
+		}(ShellDefaultsRunner.self)
 	}
 	
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FA1CBDD229546706002C6751 /* MulticoloredRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CBDD129546706002C6751 /* MulticoloredRadioButton.swift */; };
 		FA1CBDD329546706002C6751 /* MulticoloredRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CBDD129546706002C6751 /* MulticoloredRadioButton.swift */; };
+		FA1CBDDB29547C8C002C6751 /* ShellDefaultsRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CBDDA29547C8C002C6751 /* ShellDefaultsRunner.swift */; };
+		FA1CBDDC29547C8C002C6751 /* ShellDefaultsRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CBDDA29547C8C002C6751 /* ShellDefaultsRunner.swift */; };
 		FA82A12F294F2C2800410378 /* AdditionalAccentColors.tiff in Resources */ = {isa = PBXBuildFile; fileRef = FA82A12E294F2C2800410378 /* AdditionalAccentColors.tiff */; };
 		FA82A132294F2C2800410378 /* AdditionalAccentColors.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA82A130294F2C2800410378 /* AdditionalAccentColors.xib */; };
 		FA82A153294F2E9800410378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82A152294F2E9800410378 /* AppDelegate.swift */; };
@@ -28,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		FA1CBDD129546706002C6751 /* MulticoloredRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticoloredRadioButton.swift; sourceTree = "<group>"; };
+		FA1CBDDA29547C8C002C6751 /* ShellDefaultsRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellDefaultsRunner.swift; sourceTree = "<group>"; };
 		FA8062AA294F51B900E8CBF6 /* PrefPane-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrefPane-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA82A127294F2C2800410378 /* AdditionalAccentColors.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdditionalAccentColors.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA82A12C294F2C2800410378 /* PrefPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefPane.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 				FA1CBDD129546706002C6751 /* MulticoloredRadioButton.swift */,
 				FA89441129544E3D0064A9FD /* HacksForNSPrefRemoteViewService.h */,
 				FA89441229544E3D0064A9FD /* HacksForNSPrefRemoteViewService.m */,
+				FA1CBDDA29547C8C002C6751 /* ShellDefaultsRunner.swift */,
 			);
 			path = AdditionalAccentColors;
 			sourceTree = "<group>";
@@ -230,6 +234,7 @@
 				FAFC4592295209EF0079A047 /* ColoredRadioButton.swift in Sources */,
 				FA89441429544E3D0064A9FD /* HacksForNSPrefRemoteViewService.m in Sources */,
 				FA1CBDD229546706002C6751 /* MulticoloredRadioButton.swift in Sources */,
+				FA1CBDDB29547C8C002C6751 /* ShellDefaultsRunner.swift in Sources */,
 				FA82A15D294F315C00410378 /* PrefPane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +245,7 @@
 			files = (
 				FA8B1B12295168910076694B /* PreferencePaneWrapper.swift in Sources */,
 				FA82A153294F2E9800410378 /* AppDelegate.swift in Sources */,
+				FA1CBDDC29547C8C002C6751 /* ShellDefaultsRunner.swift in Sources */,
 				FAFC459329520E370079A047 /* ColoredRadioButton.swift in Sources */,
 				FA1CBDD329546706002C6751 /* MulticoloredRadioButton.swift in Sources */,
 				FA8B1B2C29517FF50076694B /* PrefPane.swift in Sources */,
