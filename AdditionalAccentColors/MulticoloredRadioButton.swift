@@ -37,7 +37,7 @@ class MulticoloredRadioButton : ColoredRadioButton
 			$0.clip()
 			
 			let image = NSImage(named: "NSColorPanel")!
-			let imageRect = CGRect(origin: CGPointZero, size: image.size)
+			let imageRect = CGRect(origin: CGPoint.zero, size: image.size)
 			
 			let imageSourceSize = CGSize(
 				width: imageRect.size.width * 0.81,
